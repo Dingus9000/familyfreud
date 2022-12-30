@@ -56,8 +56,9 @@ $(".card").flip({
 
   var data = {
       henkilot: ["Vesa-Matti Loiri","Iivo Niskanen","Putin","Ilkka Kanerva","Yona","Queen Elizabeth"],
-      kysymykset: ["Miksi Venäjä hyökkää Ukrainaan?","Milloin virvotaan?","Mitä mursu syö?","Mitä tarkoittaa NPC?","Miksi sähkön hinta nousee?","Mitä tarkoittaa slay?"]
-    }
+      kysymykset: ["Miksi Venäjä hyökkää Ukrainaan?","Milloin virvotaan?","Mitä mursu syö?","Mitä tarkoittaa NPC?","Miksi sähkön hinta nousee?","Mitä tarkoittaa slay?"],
+      puheenaiheet: ["Ukraina","Wordle","olympialaiset ohjelma","Vesa-Matti Loiri","ruplan kurssi","Jeffrey Dahmer"]   
+  }
 
   var changeTo = function( category, title ) {
     console.log(category)
