@@ -46,3 +46,28 @@ $(".card").flip({
     wrongBuzzer.play();
   });
   
+  $( "#henkilot" ).click(function() {
+    changeTo("henkilot", "Finland results category: Henkilöt!")
+});
+
+  $( "#kysymykset" ).click(function() {
+    changeTo("kysymykset", "Finland results category: Kysymykset!")
+});
+
+  var data = {
+      henkilot: ["Vesa-Matti Loiri","Iivo Niskanen","Putin","Ilkka Kanerva","Yona","Queen Elizabeth"],
+      kysymykset: ["Miksi Venäjä hyökkää Ukrainaan?","Milloin virvotaan?","Mitä mursu syö?","Mitä tarkoittaa NPC?","Miksi sähkön hinta nousee?","Mitä tarkoittaa slay?"]
+    }
+
+  var changeTo = function( category, title ) {
+    console.log(category)
+    $(".card").flip(false);
+    $("#score").text(0);
+    $("#title").text(title);
+    $("#a1").text(data[category][0]);
+    $("#a2").text(data[category][1]);
+    $("#a3").text(data[category][2]);
+    $("#a4").text(data[category][3]);
+    $("#a5").text(data[category][4]);
+    $("#a6").text(data[category][5]);
+  }
