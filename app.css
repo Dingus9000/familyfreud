@@ -4,12 +4,32 @@ body {
   font-family: 'Open Sans', sans-serif;
   /* font-family: "Clarendon"; */
   background-color: #DFDFDF;
+  background-image: url("https://background-tiles.com/overview/grey/patterns/large/1027.png");
+
 }
+
+.disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+      
+  .disable-scrollbars {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+
+p {
+    font-weight: 700;
+    color:whitesmoke;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+  }
 
 h1 {
   text-align: center;
+  color:whitesmoke;
   font-size: 32px;
   margin-bottom: -5px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
 }
 
 h3 {
