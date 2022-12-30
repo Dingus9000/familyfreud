@@ -54,6 +54,10 @@ $(".card").flip({
     changeTo("kysymykset", "Finland results category: Kysymykset!")
 });
 
+$( "#puheenaiheet" ).click(function() {
+    changeTo("puheenaiheet", "Finland results category: Puheenaiheet!")
+});
+
   var data = {
       henkilot: ["Vesa-Matti Loiri","Iivo Niskanen","Putin","Ilkka Kanerva","Yona","Queen Elizabeth"],
       kysymykset: ["Miksi Venäjä hyökkää Ukrainaan?","Milloin virvotaan?","Mitä mursu syö?","Mitä tarkoittaa NPC?","Miksi sähkön hinta nousee?","Mitä tarkoittaa slay?"],
