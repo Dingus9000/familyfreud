@@ -59,7 +59,7 @@ $( "#puheenaiheet" ).click(function() {
 });
 
 $( "#urheilu" ).click(function() {
-    changeTo("urheilu", "Finland results category: Yrheilu!")
+    changeTo("urheilu", "Finland results category: Urheilu!")
 });
 $( "#uutiset" ).click(function() {
     changeTo("uutiset", "Finland results category: Uutiset!")
@@ -102,6 +102,9 @@ $( "#games" ).click(function() {
 });
 $( "#howtopronounce" ).click(function() {
     changeTo("howtopronounce", "US results category: How To Pronounce!")
+});
+$( "#shortages" ).click(function() {
+    changeTo("shortages", "US results category: Shortages!")
 });
 $( "#definitions" ).click(function() {
     changeTo("definitions", "US results category: Definitions!")
