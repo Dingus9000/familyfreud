@@ -42,6 +42,7 @@ $("#wrong-answer").click(function () {
   $("h1").prepend("<div id=\"red-x\">X</div>")
   setTimeout(function () {
     $("#red-x").remove()
+    $("#red-x").remove()
   }, 2000);
   wrongBuzzer.play();
 });
