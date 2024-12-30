@@ -4,10 +4,10 @@ $(".card").flip({
 });
 
 var correctBuzzer = document.createElement('audio');
-correctBuzzer.setAttribute('src', 'http://www.qwizx.com/gssfx/usa/ff-clang.wav');
+correctBuzzer.setAttribute('src', 'https://cdn.freesound.org/previews/476/476178_6101353-lq.mp3');
 
 var wrongBuzzer = document.createElement('audio');
-wrongBuzzer.setAttribute('src', 'http://www.qwizx.com/gssfx/usa/ff-strike.wav')
+wrongBuzzer.setAttribute('src', 'https://cdn.freesound.org/previews/476/476177_6101353-lq.mp3')
 
 $(".card").click(function () {
   $(this).flip(true);
@@ -41,7 +41,6 @@ $("#unflip-all").click(function () {
 $("#wrong-answer").click(function () {
   $("h1").prepend("<div id=\"red-x\">X</div>")
   setTimeout(function () {
-    $("#red-x").remove()
     $("#red-x").remove()
   }, 2000);
   wrongBuzzer.play();
@@ -89,26 +88,25 @@ $("#tvshows").click(function () {
 $("#games").click(function () {
   changeTo("games", "Global results category: Games!")
 });
+$("#musicians").click(function () {
+  changeTo("musicians", "Global results category: Musicians!")
+});
 
 const data = {
-  ihmiset: ["Käärijä",
-  "Loreen",
-  "Riikka Purra",
-  "Severi Lahtinen",
-  "Marjatta Leppänen",
-  "Marko Ahtisaari"],
-  kuinka: ["syvällä Titanic on","monta hukkui juhannuksena 2023","nopeasti antibiootti vaikuttaa","usein eduskuntavaalit pidetään","paljon proteiinia päivässä","pitkä Käärijä on"],
-  miksi: ["liputetaan 1.10.","pörssisähkö on kallista","Reppu-Heppu kuoli","Venäjä toimii niin kuin se toimii","lippu puolitangossa tänään","liputetaan 10.11."],
-  mitä: ["tarkoittaa NPC","tarkoittaa slay","tarkoittaa uwu","tarkoittaa sigma","tapahtuu jos hallitus kaatuu","tarkoittaa veija"],
-  musiikki: ["Käärijä","Coldplay","Loreen","Pate Mustajärvi","Sara Siipola","Rammstein Helsinki"],
-  viihde: ["Oppenheimer","Hogwarts Legacy","Barbie movie","Pentulive","Amazing Race Suomi","The Last of Us"],
-  ruokareseptit: ["Mustatorvisieni","Pina Colada","Karvarousku","Sienirisotto","Pulmupuolukat","Quesadilla"],
-  news: ["War in Israel and Gaza","Titanic submarine","Turkey earthquake","Hurricane Hilary","Hurricane Idalia","Hurricane Lee"],
-  people: ["Damar Hamlin","Jeremy Renner","Andrew Tate","Kylian Mbappé","Travis Kelce","Jenna Ortega"],
-  movies: ["Barbie","Oppenheimer","Jawan","Sound of Freedom","John Wick: Chapter 4","Avatar: The Way of Water"],
-  passings: ["Matthew Perry","Tina Turner","Sinéad O'Connor","Ken Block","Jerry Springer","Angus Cloud"],
-  tvshows: ["The Last of Us","Wednesday","Ginny & Georgia","One Piece","Kaleidoscope","King the Land"],
-  games: ["Hogwarts Legacy","The Last of Us","Connections","Battlegrounds Mobile India","Starfield","Baldur's Gate 3"],
+  ihmiset: ["Alexander Stubb","Pekka Haavisto","Olli Rehn","Jussi Halla-aho","Windows95Man","Rolf Nordmo"],
+  kuinka: ["kauan mykoplasma tarttuu","monta päivää on jouluun","usein jalkapallon EM kisat järjestetään","monta äänioikeutettua Suomessa","korkea on Kebnekaise","pitkä on Suomen pisin puu"],
+  miksi: ["putket jäätyy kun lauhtuu","tänään liputetaan","nyt lakkoillaan","Alankomaat diskattiin Euroviisuista","Mobilepay ei toimi","kaikki vihaa Hämeenlinnaa"],
+  mitä: ["tarkoittaa skibidi","tarkoittaa norjalainen puu","tarkoittaa vox populi","on henkilötiedustelu","tarkoittaa womp womp","tarkoittaa pookie"],
+  musiikki: ["Windows95Man","Sara Siipola","Harmonikka","Joost Klein","Metallica Helsinki","Isaac Sene"],
+  viihde: ["Pottukoira kick","Windows95Man","Myrskyluodon Maija","Kick","Sara Siipola","Futistietäjä"],
+  ruokareseptit: ["Crumbl cookies","Pihlajanmarja","Kurkkusalaatti","Paahtopaisti","Sukiyaki","Bao bun"],
+  news: ["U.S. Election","Excessive heat","Olympics","Hurricane Milton","台風 気象 情報 台風 第 10 号","Iran Rafah"],
+  people: ["Donald Trump","Catherine, Princess of Wales","Kamala Harris","Imane Khelif","Joe Biden","Mike Tyson"],
+  movies: ["Inside Out 2","Deadpool & Wolverine","Saltburn","Beetlejuice Beetlejuice","Dune: Part Two","It Ends with Us"],
+  passings: ["Liam Payne","Toby Keith","O.J. Simpson","Shannen Doherty","Akira Toriyama","Ratan Tata"],
+  tvshows: ["Baby Reindeer","Fallout","House of the Dragon","Heeramandi","Shōgun","The Perfect Couple"],
+  games: ["Connections","Palworld","Infinite Craft","Sprunki","Helldivers 2","Wuthering Waves"],
+  musicians: ["Diddy","Usher","Linkin Park","Sabrina Carpenter","Justin Timberlake","Ángela Aguilar"]
 }
 var changeTo = function (category, title) {
   console.log(category)
