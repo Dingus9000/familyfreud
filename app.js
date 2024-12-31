@@ -95,6 +95,9 @@ $("#musicians").click(function () {
 $("#phgames").click(function () {
   changeTo("phgames", "PH results category: Games!")
 });
+$("#phmovies").click(function () {
+  changeTo("phmovies", "PH results category: Movies!")
+});
 $("#phgeneral").click(function () {
   changeTo("phgeneral", "PH results category: Jelking prompts!")
 });
@@ -115,6 +118,7 @@ const data = {
   games: ["Connections","Palworld","Infinite Craft","Sprunki","Helldivers 2","Wuthering Waves"],
   musicians: ["Diddy","Usher","Linkin Park","Sabrina Carpenter","Justin Timberlake","Ángela Aguilar"],
   phgames: ["Fortnite","Genshin Impact","Pokemon","Overwatch","Minecraft","Resident Evil"],
+  phmovies: ["Harley Quinn","Star Wars","Game of Thrones","Avatar","Harry Potter","Wonder Woman"],
   phgeneral: ["hentai", "latina", "milf", "asian", "ebony", "lesbian"]
 }
 var changeTo = function (category, title) {
