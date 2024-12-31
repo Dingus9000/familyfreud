@@ -92,6 +92,12 @@ $("#games").click(function () {
 $("#musicians").click(function () {
   changeTo("musicians", "Global results category: Musicians!")
 });
+$("#phgames").click(function () {
+  changeTo("phgames", "PH results category: Games!")
+});
+$("#phgeneral").click(function () {
+  changeTo("phgeneral", "PH results category: Jelking prompts!")
+});
 
 const data = {
   ihmiset: ["Alexander Stubb","Pekka Haavisto","Olli Rehn","Jussi Halla-aho","Windows95Man","Rolf Nordmo"],
@@ -107,7 +113,9 @@ const data = {
   passings: ["Liam Payne","Toby Keith","O.J. Simpson","Shannen Doherty","Akira Toriyama","Ratan Tata"],
   tvshows: ["Baby Reindeer","Fallout","House of the Dragon","Heeramandi","Shōgun","The Perfect Couple"],
   games: ["Connections","Palworld","Infinite Craft","Sprunki","Helldivers 2","Wuthering Waves"],
-  musicians: ["Diddy","Usher","Linkin Park","Sabrina Carpenter","Justin Timberlake","Ángela Aguilar"]
+  musicians: ["Diddy","Usher","Linkin Park","Sabrina Carpenter","Justin Timberlake","Ángela Aguilar"],
+  phgames: ["Fortnite","Genshin Impact","Pokemon","Overwatch","Minecraft","Resident Evil"],
+  phgeneral: ["hentai", "latina", "milf", "asian", "ebony", "lesbian"]
 }
 var changeTo = function (category, title) {
   console.log(category)
